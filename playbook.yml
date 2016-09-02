@@ -1,8 +1,11 @@
 ---
-- hosts: all
+- hosts: "{{ host_name }}"
   become: true
   vars:
-    MySQL_root_pass: root
+    MySQL_root_pass: 2RJ6FkEn6QWhkmFHdkXbMb8TXkhiuz
+    repo: oadiazp:Sch4z4m4n@github.com/oadiazp/alarms.git
+    branch: master
+
   tasks:
     - name: Update APT-Cache
       apt: update_cache=yes
@@ -17,9 +20,15 @@
         - php5-mysql
         - php5-fpm
         - python-mysqldb
+        - git
 
     - name: Install MySQL
       apt: package=mysql-server state=installed force=yes update_cache=yes cache_valid_time=3600
+
+    - name: Clone repository
+      git: repo=https://{{ repo }} dest={{ path }} version={{ branch }}
+      become: false
+      when: env=="live"
 
     - name: Create the nginx vhost
       copy: src=conf/{{ env }}/nginx dest=/etc/nginx/sites-enabled/{{ project_name }}
@@ -28,10 +37,10 @@
       service: name=nginx state=restarted
 
     - name: Create MySQL database
-      mysql_db: name={{ project_name }} state=present login_user=root
+      mysql_db: name={{ project_name }} state=present login_user=root login_password={{ MySQL_root_pass }}
 
     - name: Load backup
-      mysql_db: name={{ project_name }} state=import target={{ path }}/conf/{{ env }}/dump.sql
+      mysql_db: name={{ project_name }} state=import target={{ path }}/conf/{{ env }}/dump.sql login_user=root login_password={{ MySQL_root_pass }}
 
     - name: Update the WP config file
       copy: src=conf/{{ env }}/wp-config.php dest={{ path }}

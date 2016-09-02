@@ -10,7 +10,7 @@ server {
 
   location ~ \.php$ {
 
-    root  /vagrant;
+    root  /home/ubuntu/apps/alarms_live;
     try_files $uri $uri/ /index.php?$args;
     index  index.php;
     fastcgi_index index.php;
@@ -24,7 +24,7 @@ server {
   }
   location / {
 
-    root  /vagrant;
+    root  /home/ubuntu/apps/alarms_live;
     try_files $uri $uri/ /index.php?$args;
   }
 }
