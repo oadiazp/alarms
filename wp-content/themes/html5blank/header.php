@@ -1,5 +1,5 @@
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php echo language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
@@ -50,7 +50,7 @@
 			                        1-844-816-1978
 			                    </a>
 			                    <span class="or">or</span>
-			                    <a class="btn secondary request-quote-btn ao_click_button trackable" data-target-modal-id="divModalContainer" href="/request-a-quote">
+			                    <a class="btn secondary request-quote-btn ao_click_button trackable" data-target-modal-id="divModalContainer" href="index.php/request-a-quote">
 			                        GET A FREE QUOTE
 			                        <span class="arrow right"></span>
 			                    </a>

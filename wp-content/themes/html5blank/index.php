@@ -13,7 +13,7 @@
 								<p>We asked our customers whether they would recommend Frontpoint to friends or family &mdash; 96% of them said yes.</p>
 								<div class="paragraph-button-block">
 									<p></p>
-									<a href="/request-a-quote" class="btn ao_click_button trackable">
+									<a href="index.php/request-a-quote" class="btn ao_click_button trackable">
 									Get a Free Quote
 									<span class="arrow right"></span>
 									</a>
