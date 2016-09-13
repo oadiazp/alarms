@@ -43,6 +43,20 @@ if (function_exists('add_theme_support'))
 	Functions
 \*------------------------------------*/
 
+function send_smtp_email( $phpmailer )
+{
+    $phpmailer->isSMTP();
+    $phpmailer->Host = "smtp.gmail.com";
+    $phpmailer->SMTPAuth = true;
+    $phpmailer->Port = "587";
+    $phpmailer->Username = "omar@cargotech.co";
+    $phpmailer->Password = ".Voldemort.";
+    $phpmailer->SMTPSecure = "tls";
+    $phpmailer->From = "omar@cargotech.co";
+    $phpmailer->FromName = "Alarms";
+}
+add_action('phpmailer_init','send_smtp_email');
+
 // HTML5 Blank navigation
 function html5blank_nav()
 {

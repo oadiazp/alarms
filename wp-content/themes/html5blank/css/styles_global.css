@@ -9,104 +9,38 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     src: url(../fonts/OpenSans-reg.ttf) format("truetype");
 }
 
-
-
-
-.cn_in_page_tab_navigation_support_messaging {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background: #fff none repeat scroll 0 0;
-    border-color: #eaeaeb;
-    border-image: none;
-    border-style: solid none;
-    border-width: 1px;
-    padding-bottom: 1.71429em;
-    padding-top: 1.57143em;
-}
-
-.cn_in_page_tab_navigation_support_messaging .copy-block h5 {
-    color: #323537;
-    font-size: 1.28571em;
-    margin: 0 auto 1em;
-    max-width: 80%;
-}
-
-.cn_in_page_tab_navigation_support_messaging .copy-block p {
-    width: 50%;
-}
-
-.cn_in_page_tab_navigation_support_messaging .copy-block p {
-    color: #8e9091;
-    margin: 0 auto;
-    max-width: 80%;
-}
-
-.cn_in_page_tab_navigation .in_page_tab {
-    border-bottom: medium none;
-    float: left;
-    min-height: 1px;
-    padding: 0;
-    position: relative;
-    width: 33.3333%;
-}
-
-.cn_equipment_sub_category_lead_in {
-    padding-bottom: 3.57143em;
-    padding-top: 3.57143em;
-}
-
-.cn_equipment_sub_category_lead_in .copy-block, .cn_equipment_sub_category_lead_in .image-block {
-    float: left;
-    min-height: 1px;
-    padding-left: 1.07143em;
-    padding-right: 1.07143em;
-    position: relative;
-    width: 50%;
-}
-
-.cn_equipment_sub_category_lead_in .copy-block {
-    padding: 0 6.92857em;
-    text-align: left;
-}
-
-.cn_equipment_sub_category_lead_in h3 {
-    color: #5abb62;
-    font-size: 2.57143em;
-    margin-bottom: 0.277778em;
-}
-
-.cn_equipment_sub_category_lead_in .equipment-block {
-    margin: 2.5em auto 2em;
-    text-align: center;
-    width: 12em;
-}
-
-.cn_equipment_sub_category_lead_in .equipment-block {
-    float: left;
-    margin: 0 0 2em;
-}
-
-.cn_equipment_sub_category_lead_in .equipment-block a {
-    display: inline-block;
-    font-size: 0.9em;
-}
-
-.cn_equipment_sub_category_lead_in .equipment-block a {
-    min-height: 3em;
-}
-
-.cn_equipment_sub_category_lead_in a {
-    text-decoration: none;
-}
-
-.icon-telephone{
+.flags{
 	position: relative;
-	top: 3px;
+	margin-right: 10px;
+	float: right;
+	top: -60px;
 }
 
-/* IMPORTANTE CAMBIAR EN STYLE.CSS*/
-.cn_in_page_tab_navigation .in_page_tab .arrow{
-	margin-left: 0 !important;
+.flags img{
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+.Iactive{
+	border: 1px solid #fff;
+}
+
+.dlang{
+	margin: 150px 50px 100px;
+}
+
+.btnlang{
+	width: 100%;
+	margin-top: 15px;
+}
+
+.slang, .pages{
+	width: 45%;
+	float: left;
+}
+
+.sep{
+	padding: 0 5%;
+	height: 1px;
+	float: left;
 }

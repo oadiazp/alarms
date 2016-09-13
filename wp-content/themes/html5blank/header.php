@@ -1,5 +1,6 @@
+<?php session_start(); ?>
 <!doctype html>
-<html <?php echo language_attributes(); ?>>
+<html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
@@ -37,6 +38,9 @@
 							</div>
 						</div>
 					</nav>
+					<div class="flags">
+	                	<!-- NEGRIN PONES AQUI LA REGION PARA EL WIDGETS DEL IDIOMA -->
+	                </div>
 				</div>
 			</div>
 			<div data-should-insert-height-spanner="false" data-top-offset-target="#cn_global_header_navigation" class="component cn_global_call_to_action scroll-fixed scroll-fixed-lg  cp_2 fixed" id="ctl05_header_1_divComponentContainer">
@@ -59,9 +63,4 @@
 			        </div>
 			    </aside>
 			</div>
-			<script>
-			    function validateGlobalCTA() {
-			        return fp_base.validateFormForSubmit($('#btnGetAQuote'));
-			    }
-			</script>
 			</header>
