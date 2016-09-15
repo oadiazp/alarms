@@ -1,9 +1,7 @@
 var url = "";
 (function ($, root, undefined) {
-	
 	$(function () {
 		url = $("#urlsrc").val();
-		//alert($(window).width());
 		if ($(window).width() < 900){
 			loadJS('mytheme-jquery-plugin', '/js/plugins.min.js');
 			loadJS('mytheme-jquery-main', '/js/main.min.js');

@@ -51,8 +51,7 @@
 			                <div data-should-insert-height-spanner="true" class="cta-container scroll-fixed scroll-fixed-sm" id="ctl05_header_1_divCTA">
 			                    <h5>CALL for a free quote</h5>
 			                    <a data-uv_override="Click to Call" class="tel-btn trackable ao_phone_call" id="ctl05_header_1_anchorTeleLink" href="tel:18448161978">
-			                        <span class="icon-telephone"></span>
-			                        1-844-816-1978
+			                        <span class="icon-telephone"></span>1-844-816-1978
 			                    </a>
 			                    <span class="or">or</span>
 			                    <a class="btn secondary request-quote-btn ao_click_button trackable" data-target-modal-id="divModalContainer" href="index.php/request-a-quote">
@@ -65,4 +64,4 @@
 			    </aside>
 			</div>
 			</header>
-			<input type="hidden" id="urlsrc" value="<?php echo get_template_directory_uri(); ?>">
+			<input type="hidden" id="urlsrc" value="<?php echo get_template_directory_uri();?>">
