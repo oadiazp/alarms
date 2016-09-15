@@ -39,7 +39,8 @@
 						</div>
 					</nav>
 					<div class="flags">
-	                	<!-- NEGRIN PONES AQUI LA REGION PARA EL WIDGETS DEL IDIOMA -->
+	                	<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Widget Area 2')) : ?>
+						<?php endif; ?>
 	                </div>
 				</div>
 			</div>
@@ -64,3 +65,4 @@
 			    </aside>
 			</div>
 			</header>
+			<input type="hidden" id="urlsrc" value="<?php echo get_template_directory_uri(); ?>">
